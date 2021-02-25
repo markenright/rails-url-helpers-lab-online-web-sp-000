@@ -1,0 +1,5 @@
+class ActivateController < ApplicationController
+
+    
+
+end

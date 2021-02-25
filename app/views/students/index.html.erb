@@ -1,5 +1,7 @@
+<p> Index of Students <p>
+
 <div>
   <% @students.each do |student| %>
-    <div><%= student.first_name + " " + student.last_name %></div>
+    <div><%= student.first_name + " " + student.last_name + " " + student.active.to_s + student.id.to_s%></div>
   <% end %>
 </div>

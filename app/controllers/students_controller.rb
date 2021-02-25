@@ -6,8 +6,30 @@ class StudentsController < ApplicationController
   end
 
   def show
+    
+    @student = Student.find(params[:id])
+    
   end
 
+  def update
+    @student = Student.find(params[:id])
+
+  end
+
+  def edit
+    @student = Student.find(params[:id])
+    @info = Student.all
+
+  end
+
+  
+  def update
+    @student = Student.find params[:id]
+    @student.update
+    redirect_to @student
+  end
+
+  
   private
 
     def set_student
